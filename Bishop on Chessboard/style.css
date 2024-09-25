@@ -1,0 +1,16 @@
+.box {
+  height: 5rem;
+  width: 5rem;
+  border: 1px solid #45474B;
+  border-radius: 5px;
+}
+
+.yellow {
+  background-color: #F4CE14;
+}
+
+.colorPath {
+  background-color: #379777;
+  box-shadow: 1px -1px 3px 0px gray;
+  border-radius: 5px;
+}

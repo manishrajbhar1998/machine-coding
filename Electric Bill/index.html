@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let unitRange = [0, 100, 200, 300];
+      let priceRange = [1, 2, 3, 5];
+      let givenUnit = 320; // 1350
+      let totalPrice = 0;
+
+      for (let i = 0; i < unitRange.length; i++) {
+          let temp = 0;
+          if(i == unitRange.length - 1){
+            temp = givenUnit;
+            totalPrice += temp * priceRange[i];
+          }else if(givenUnit > 100){
+            temp = 100;
+            totalPrice += temp * priceRange[i];
+            givenUnit -= 100;
+          }else{
+            temp = givenUnit;
+            totalPrice += temp * priceRange[i];
+            i = 4;
+          }
+        
+      }
+
+      console.log(totalPrice)
+
+      // for (let i = unitRange.length - 1; i >= 0; i--) {
+      //   if (givenUnit > unitRange[i]) {
+      //     let remainUnit = givenUnit - unitRange[i];
+      //     totalPrice += remainUnit * priceRange[i];
+      //     givenUnit -= remainUnit;
+      //   }
+      // }
+
+    </script>
+  </body>
+</html>
