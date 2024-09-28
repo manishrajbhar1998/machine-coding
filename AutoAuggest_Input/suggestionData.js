@@ -1,0 +1,1 @@
+ const DATA = ["Apple","Motorola","IQ","Nothing","Samsung","pixel","Ipad","Vivo","Redmi","Realme"]
