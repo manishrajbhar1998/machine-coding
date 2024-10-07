@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10PX;
+    border: 1px solid;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 50px;
+
+}
+
+.light{
+  display: block;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red{
+  background-color: #FF0000;
+}
+
+.orange{
+  background-color: #FFB200;
+}
+
+.green{
+  background-color: #A1DD70;
+}

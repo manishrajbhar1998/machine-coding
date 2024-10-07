@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <span class="light" id="red">00</span>
+      <span class="light" id="orange">00</span>
+      <span class="light" id="green">00</span>
+    </div>
+
+    <script>
+
+      let redSpan = document.querySelector("#red");
+      let orangeSpan = document.querySelector("#orange");
+      let greenSpan = document.querySelector("#green");
+
+      let globalCount = 0;
+      let red = 0;
+      let orange = 0;
+      let green = 0;
+      
+
+      setInterval(()=>{
+        globalCount++;
+        redFun();
+      },1000)
+      
+      function redFun(){
+        redSpan.textContent = globalCount > 9 ? globalCount : '0'+globalCount;
+        redSpan.classList.add('red')
+
+      }
+
+    
+
+    </script>
+  </body>
+</html>
