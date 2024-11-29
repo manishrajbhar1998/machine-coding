@@ -1,0 +1,13 @@
+header{
+  background: lightcoral;
+  height: 4px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* .scroll{
+  background-color: lightblue;
+  height: 4px;
+} */
